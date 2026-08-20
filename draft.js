@@ -1,9 +1,9 @@
 // ENGELSİZ FIFAINDEX VERİTABANI
 const database = {
     "Manager": [
-        { name: "Guardiola", ovr: 92, nat: "es", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pep_Guardiola_2015.jpg/320px-Pep_Guardiola_2015.jpg" },
-        { name: "Ancelotti", ovr: 91, nat: "it", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Carlo_Ancelotti_2016.jpg/320px-Carlo_Ancelotti_2016.jpg" },
-        { name: "Klopp", ovr: 90, nat: "de", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/J%C3%BCrgen_Klopp_2022.jpg/320px-J%C3%BCrgen_Klopp_2022.jpg" }
+        { name: "Guardiola", ovr: 92, nat: "es", img: "https://static.independent.co.uk/2026/07/22/11/01KY4G3TF4F98BZMPA5T8N96T7.jpg?quality=75&width=1368&crop=3%3A2%2Csmart&trim=0%2C0%2C0%2C0&auto=webp" },
+        { name: "Ancelotti", ovr: 91, nat: "it", img: "https://static.independent.co.uk/2023/06/27/18/85ea96eb15e8e5d370e515c9a464cdc0Y29udGVudHNlYXJjaGFwaSwxNjg3OTcxNzM2-2.72586232.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp" },
+        { name: "Klopp", ovr: 90, nat: "de", img: "https://media.cnn.com/api/v1/images/stellar/prod/240126054543-01-jurgen-klopp-file.jpg?c=original&q=w_860,c_fill/f_avif" }
     ],
     "ST": [
         { name: "Haaland", ovr: 91, nat: "no", img: "https://fifastatic.fifaindex.com/FIFA24/players/239085.png" },

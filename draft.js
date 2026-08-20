@@ -1,55 +1,56 @@
 // ENGELSİZ FIFAINDEX VERİTABANI
 const database = {
     "Manager": [
-        { name: "Guardiola", ovr: 92, nat: "es", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pep_Guardiola.jpg/320px-Pep_Guardiola.jpg" },
+        { name: "Guardiola", ovr: 92, nat: "es", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pep_Guardiola_2015.jpg/320px-Pep_Guardiola_2015.jpg" },
         { name: "Ancelotti", ovr: 91, nat: "it", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Carlo_Ancelotti_2016.jpg/320px-Carlo_Ancelotti_2016.jpg" },
-        { name: "Klopp", ovr: 90, nat: "de", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/J%C3%BCrgen_Klopp%2C_Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_04.jpg/320px-J%C3%BCrgen_Klopp%2C_Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_04.jpg" }
+        { name: "Klopp", ovr: 90, nat: "de", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/J%C3%BCrgen_Klopp_2022.jpg/320px-J%C3%BCrgen_Klopp_2022.jpg" }
     ],
-    "ST": [ // Forvetler
+    "ST": [
         { name: "Haaland", ovr: 91, nat: "no", img: "https://fifastatic.fifaindex.com/FIFA24/players/239085.png" },
         { name: "Mbappé", ovr: 91, nat: "fr", img: "https://fifastatic.fifaindex.com/FIFA24/players/231747.png" },
         { name: "Kane", ovr: 90, nat: "gb-eng", img: "https://fifastatic.fifaindex.com/FIFA24/players/202126.png" },
         { name: "Osimhen", ovr: 88, nat: "ng", img: "https://fifastatic.fifaindex.com/FIFA24/players/232293.png" },
-        { name: "Lewandowski", ovr: 89, nat: "pl", img: "https://fifastatic.fifaindex.com/FIFA24/players/188545.png" }
+        { name: "Lewandowski", ovr: 89, nat: "pl", img: "https://fifastatic.fifaindex.com/FIFA24/players/188545.png" },
+        { name: "Icardi", ovr: 86, nat: "ar", img: "https://fifastatic.fifaindex.com/FIFA24/players/201399.png" }
     ],
-    "W": [ // Kanatlar 
+    "W": [
         { name: "Vini Jr", ovr: 89, nat: "br", img: "https://fifastatic.fifaindex.com/FIFA24/players/238794.png" },
         { name: "Salah", ovr: 89, nat: "eg", img: "https://fifastatic.fifaindex.com/FIFA24/players/209331.png" },
         { name: "Saka", ovr: 87, nat: "gb-eng", img: "https://fifastatic.fifaindex.com/FIFA24/players/246669.png" },
         { name: "Leão", ovr: 86, nat: "pt", img: "https://fifastatic.fifaindex.com/FIFA24/players/241721.png" },
         { name: "Son", ovr: 87, nat: "kr", img: "https://fifastatic.fifaindex.com/FIFA24/players/200104.png" }
     ],
-    "CM": [ // Orta Sahalar
+    "CM": [
         { name: "De Bruyne", ovr: 91, nat: "be", img: "https://fifastatic.fifaindex.com/FIFA24/players/192985.png" },
         { name: "Bellingham", ovr: 88, nat: "gb-eng", img: "https://fifastatic.fifaindex.com/FIFA24/players/252371.png" },
         { name: "Rodri", ovr: 90, nat: "es", img: "https://fifastatic.fifaindex.com/FIFA24/players/231866.png" },
         { name: "Odegaard", ovr: 87, nat: "no", img: "https://fifastatic.fifaindex.com/FIFA24/players/222665.png" },
         { name: "Valverde", ovr: 88, nat: "uy", img: "https://fifastatic.fifaindex.com/FIFA24/players/239053.png" }
     ],
-    "CB": [ // Stoperler
+    "CB": [
         { name: "Dias", ovr: 89, nat: "pt", img: "https://fifastatic.fifaindex.com/FIFA24/players/239818.png" },
         { name: "Van Dijk", ovr: 89, nat: "nl", img: "https://fifastatic.fifaindex.com/FIFA24/players/203376.png" },
         { name: "Saliba", ovr: 84, nat: "fr", img: "https://fifastatic.fifaindex.com/FIFA24/players/243715.png" },
         { name: "Rudiger", ovr: 86, nat: "de", img: "https://fifastatic.fifaindex.com/FIFA24/players/205452.png" },
-        { name: "Marquinhos", ovr: 87, nat: "br", img: "https://fifastatic.fifaindex.com/FIFA24/players/214100.png" }
+        { name: "Marquinhos", ovr: 87, nat: "br", img: "https://fifastatic.fifaindex.com/FIFA24/players/214100.png" },
+        { name: "Djiku", ovr: 80, nat: "gh", img: "https://fifastatic.fifaindex.com/FIFA24/players/225100.png" }
     ],
-    "FB": [ // Bekler
+    "FB": [
         { name: "Hakimi", ovr: 84, nat: "ma", img: "https://fifastatic.fifaindex.com/FIFA24/players/235212.png" },
         { name: "Davies", ovr: 84, nat: "ca", img: "https://fifastatic.fifaindex.com/FIFA24/players/234396.png" },
         { name: "Theo", ovr: 85, nat: "fr", img: "https://fifastatic.fifaindex.com/FIFA24/players/232656.png" },
         { name: "Walker", ovr: 84, nat: "gb-eng", img: "https://fifastatic.fifaindex.com/FIFA24/players/188377.png" },
         { name: "Frimpong", ovr: 85, nat: "nl", img: "https://fifastatic.fifaindex.com/FIFA24/players/253164.png" }
     ],
-    "GK": [ // Kaleciler
+    "GK": [
         { name: "Courtois", ovr: 90, nat: "be", img: "https://fifastatic.fifaindex.com/FIFA24/players/192119.png" },
         { name: "Alisson", ovr: 89, nat: "br", img: "https://fifastatic.fifaindex.com/FIFA24/players/212831.png" },
         { name: "Ederson", ovr: 88, nat: "br", img: "https://fifastatic.fifaindex.com/FIFA24/players/210257.png" },
         { name: "Ter Stegen", ovr: 89, nat: "de", img: "https://fifastatic.fifaindex.com/FIFA24/players/192448.png" },
-        { name: "Livakovic", ovr: 83, nat: "hr", img: "https://fifastatic.fifaindex.com/FIFA24/players/233866.png" }
+        { name: "Muslera", ovr: 81, nat: "uy", img: "https://fifastatic.fifaindex.com/FIFA24/players/180731.png" }
     ]
 };
 
-// Diziliş Şemaları
 const formations = {
     "4-3-3": [
         { type: "W", label: "LW" }, { type: "ST", label: "ST" }, { type: "W", label: "RW" }, 
@@ -72,37 +73,33 @@ const formations = {
 };
 
 let currentSpot = null;
+let selectedPlayers = []; // Sır sır gibi saklanan seçili oyuncular hafızası!
 
 function startDraft() {
     const teamName = document.getElementById("team-name").value || "Adsız FC";
     const formationKey = document.getElementById("formation").value;
     
-    // Yükleniyor ekranını göster
     document.getElementById("setup-screen").style.display = "none";
     document.getElementById("game-screen").style.display = "block";
     document.getElementById("display-team-name").innerText = teamName + " (Yapay Zeka Çiziyor... 🎨)";
     document.getElementById("team-logo").src = "https://i.gifer.com/ZKZg.gif"; 
     
+    // Oyun yeniden başladığında hafızayı sıfırla
+    selectedPlayers = [];
     buildPitch(formationKey);
     
-    // API ANAHTARI GEREKTİRMEYEN YAPAY ZEKA (Pollinations AI)
-    // Doğrudan URL üzerinden prompt gönderiyoruz
     const prompt = `Professional esports football team logo for a team named ${teamName}, minimalist, dark background, neon green details, high resolution`;
     const aiImageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=256&height=256&nologo=true`;
 
-    // Görselin yüklenip yüklenmediğini kontrol etmek için arka planda indiriyoruz
     const img = new Image();
     img.onload = function() {
-        // Yükleme başarılıysa AI logosunu ekrana bas
         document.getElementById("team-logo").src = aiImageUrl;
         document.getElementById("display-team-name").innerText = teamName;
     };
     img.onerror = function() {
-        // Eğer AI sunucusu yoğunsa anında baş harf logosuna dön (Sistem çökmesin)
         document.getElementById("team-logo").src = `https://ui-avatars.com/api/?name=${encodeURIComponent(teamName)}&background=1e1e1e&color=64ffda&size=128&bold=true`;
         document.getElementById("display-team-name").innerText = teamName;
     };
-    
     img.src = aiImageUrl;
 }
 
@@ -111,7 +108,6 @@ function buildPitch(formationKey) {
     pitch.innerHTML = ""; 
     
     const layout = formations[formationKey];
-    
     const rowCounts = formationKey.split("-").map(Number);
     rowCounts.reverse().push(1); 
     
@@ -148,21 +144,34 @@ function openModal(positionType, spotElement) {
     choicesContainer.innerHTML = "";
     
     const availablePlayers = database[positionType];
-    const choices = getRandomPlayers(availablePlayers, 5);
     
-    choices.forEach(player => {
-        const flagUrl = `https://flagcdn.com/24x18/${player.nat}.png`;
-        // onerror etiketi tamamen silindi, direkt fifaindex'ten çekecek
-        const cardHtml = `
-            <div class="choice-card" onclick='selectPlayer(${JSON.stringify(player)}, "${positionType}")'>
-                <span class="ovr">${player.ovr}</span>
-                <img class="flag" src="${flagUrl}" alt="flag">
-                <img src="${player.img}" alt="${player.name}">
-                <div class="name">${player.name}</div>
-            </div>
-        `;
-        choicesContainer.innerHTML += cardHtml;
-    });
+    // Zaten sahaya yerleştirilmiş oyuncuları havuzdan ÇIKARIYORUZ
+    const unselectedPlayers = availablePlayers.filter(p => !selectedPlayers.includes(p.name));
+    
+    // Eğer havuzda oyuncu kalmadıysa mevcudu göster, varsa 5 tane seç
+    const amountToPick = Math.min(5, unselectedPlayers.length);
+    const choices = getRandomPlayers(unselectedPlayers, amountToPick);
+    
+    if (choices.length === 0) {
+        choicesContainer.innerHTML = `<p style="color: white; width: 100%;">Bu mevki için boşta oyuncu kalmadı!</p>`;
+    } else {
+        choices.forEach(player => {
+            const flagUrl = `https://flagcdn.com/24x18/${player.nat}.png`;
+            
+            // Eğer resim kırık gelirse HATA VERMESİN diye yedek (fallback) UI Avatar eklendi
+            const fallbackImg = `https://ui-avatars.com/api/?name=${encodeURIComponent(player.name)}&background=random&color=fff&size=128`;
+            
+            const cardHtml = `
+                <div class="choice-card" onclick='selectPlayer(${JSON.stringify(player)}, "${positionType}")'>
+                    <span class="ovr">${player.ovr}</span>
+                    <img class="flag" src="${flagUrl}" alt="flag">
+                    <img src="${player.img}" alt="${player.name}" onerror="this.src='${fallbackImg}'">
+                    <div class="name">${player.name}</div>
+                </div>
+            `;
+            choicesContainer.innerHTML += cardHtml;
+        });
+    }
     
     document.getElementById("playerModal").style.display = "block";
 }
@@ -173,10 +182,21 @@ function closeModal() {
 
 function selectPlayer(player, positionType) {
     const flagUrl = `https://flagcdn.com/24x18/${player.nat}.png`;
+    const fallbackImg = `https://ui-avatars.com/api/?name=${encodeURIComponent(player.name)}&background=random&color=fff&size=128`;
+    
+    // Eğer karta önceden başka biri seçilmişse, onu hafızadan siliyoruz (tekrar seçilebilsin diye)
+    const prevPlayer = currentSpot.getAttribute("data-player-name");
+    if (prevPlayer) {
+        selectedPlayers = selectedPlayers.filter(name => name !== prevPlayer);
+    }
+    
+    // Yeni seçilen oyuncuyu hafızaya yaz ve kartın verisine ekle
+    selectedPlayers.push(player.name);
+    currentSpot.setAttribute("data-player-name", player.name);
     
     if(positionType === "Manager") {
         currentSpot.innerHTML = `
-            <img src="${player.img}" style="width:100%; height:60%; object-fit:contain; margin-top:5px; border-radius:50%;">
+            <img src="${player.img}" onerror="this.src='${fallbackImg}'" style="width:80%; height:60%; object-fit:contain; margin-top:5px; border-radius:50%;">
             <div style="font-size:0.8rem; margin-top:5px; text-align:center;">${player.name}</div>
         `;
         currentSpot.style.border = "2px solid #64ffda";
@@ -185,7 +205,7 @@ function selectPlayer(player, positionType) {
         currentSpot.innerHTML = `
             <span class="card-ovr">${player.ovr}</span>
             <img class="card-flag" src="${flagUrl}">
-            <img class="card-img" src="${player.img}">
+            <img class="card-img" src="${player.img}" onerror="this.src='${fallbackImg}'">
             <div class="card-name">${player.name}</div>
         `;
     }

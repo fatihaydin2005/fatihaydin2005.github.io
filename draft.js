@@ -152,7 +152,8 @@ function openModal(positionType, spotElement) {
             <div class="choice-card" onclick='selectPlayer(${JSON.stringify(player)}, "${positionType}")'>
                 <span class="ovr">${player.ovr}</span>
                 <img class="flag" src="${flagUrl}" alt="flag">
-                <img src="${player.img}" alt="${player.name}">
+                <!-- Resim bozuksa otomatik isimden logo yap (onerror) -->
+                <img src="${player.img}" alt="${player.name}" onerror="this.src='https://ui-avatars.com/api/?name=${player.name}&background=random&color=fff'">
                 <div class="name">${player.name}</div>
             </div>
         `;
@@ -180,7 +181,8 @@ function selectPlayer(player, positionType) {
         currentSpot.innerHTML = `
             <span class="card-ovr">${player.ovr}</span>
             <img class="card-flag" src="${flagUrl}">
-            <img class="card-img" src="${player.img}">
+            <!-- Resim bozuksa otomatik isimden logo yap (onerror) -->
+            <img class="card-img" src="${player.img}" onerror="this.src='https://ui-avatars.com/api/?name=${player.name}&background=random&color=fff'">
             <div class="card-name">${player.name}</div>
         `;
     }

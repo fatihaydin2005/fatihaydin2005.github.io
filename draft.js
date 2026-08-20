@@ -73,54 +73,37 @@ const formations = {
 
 let currentSpot = null;
 
-// startDraft fonksiyonunun başına "async" ekledik çünkü yapay zekayı bekleyecek
-async function startDraft() {
+function startDraft() {
     const teamName = document.getElementById("team-name").value || "Adsız FC";
     const formationKey = document.getElementById("formation").value;
     
-    // 1. Ekranı hemen oyuna geçir ve "Yükleniyor" animasyonu ver
+    // Yükleniyor ekranını göster
     document.getElementById("setup-screen").style.display = "none";
     document.getElementById("game-screen").style.display = "block";
-    document.getElementById("display-team-name").innerText = teamName + " (Yapay Zeka Logo Çiziyor... 🎨)";
-    document.getElementById("team-logo").src = "https://i.gifer.com/ZKZg.gif"; // Geçici yükleniyor ikonu
+    document.getElementById("display-team-name").innerText = teamName + " (Yapay Zeka Çiziyor... 🎨)";
+    document.getElementById("team-logo").src = "https://i.gifer.com/ZKZg.gif"; 
     
-    buildPitch(formationKey); // Sahayı arkada kurmaya başla
+    buildPitch(formationKey);
     
-    // 2. API ANAHTARIN (Riski kabul ettin, buraya yapıştırıyorsun!)
-    // HuggingFace.co adresinden ücretsiz üye olup alacağın anahtarı buraya yaz:
-    const API_KEY = "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"; 
-    
-    // 3. Yapay Zekaya Verdiğimiz Çizim Komutu (Prompt)
-    // Sitenin temasına uyması için koyu arka planlı ve neon yeşil detaylı çizmesini istiyoruz.
-    const promptText = `A professional esports football team logo for a team named ${teamName}, vector, minimalist, dark background, neon green and black colors, highly detailed, no text`;
+    // API ANAHTARI GEREKTİRMEYEN YAPAY ZEKA (Pollinations AI)
+    // Doğrudan URL üzerinden prompt gönderiyoruz
+    const prompt = `Professional esports football team logo for a team named ${teamName}, minimalist, dark background, neon green details, high resolution`;
+    const aiImageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=256&height=256&nologo=true`;
 
-    try {
-        // Yapay zeka sunucusuna istek (fetch) atıyoruz
-        const response = await fetch(
-            "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2-1",
-            {
-                headers: { Authorization: `Bearer ${API_KEY}` },
-                method: "POST",
-                body: JSON.stringify({ inputs: promptText }),
-            }
-        );
-
-        if (!response.ok) throw new Error("Yapay zeka yanıt vermedi.");
-
-        // Gelen görseli blob (dosya) formatında alıp sitemizde gösteriyoruz
-        const blob = await response.blob();
-        const imageUrl = URL.createObjectURL(blob);
-        
-        document.getElementById("team-logo").src = imageUrl;
+    // Görselin yüklenip yüklenmediğini kontrol etmek için arka planda indiriyoruz
+    const img = new Image();
+    img.onload = function() {
+        // Yükleme başarılıysa AI logosunu ekrana bas
+        document.getElementById("team-logo").src = aiImageUrl;
         document.getElementById("display-team-name").innerText = teamName;
-        
-    } catch (error) {
-        console.error("AI Logo Hatası:", error);
-        // Eğer kotan biterse veya API çökerse sistem patlamasın diye yedek baş harf logosu:
-        document.getElementById("team-logo").src = `https://ui-avatars.com/api/?name=${teamName}&background=1e1e1e&color=64ffda&size=128`;
+    };
+    img.onerror = function() {
+        // Eğer AI sunucusu yoğunsa anında baş harf logosuna dön (Sistem çökmesin)
+        document.getElementById("team-logo").src = `https://ui-avatars.com/api/?name=${encodeURIComponent(teamName)}&background=1e1e1e&color=64ffda&size=128&bold=true`;
         document.getElementById("display-team-name").innerText = teamName;
-        alert("Yapay zeka şu an meşgul, geçici yedek logo atandı!");
-    }
+    };
+    
+    img.src = aiImageUrl;
 }
 
 function buildPitch(formationKey) {

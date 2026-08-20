@@ -88,7 +88,7 @@ async function startDraft() {
     
     // 2. API ANAHTARIN (Riski kabul ettin, buraya yapıştırıyorsun!)
     // HuggingFace.co adresinden ücretsiz üye olup alacağın anahtarı buraya yaz:
-    const API_KEY = "BURAYA_API_ANAHTARINI_YAZ"; 
+    const API_KEY = "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"; 
     
     // 3. Yapay Zekaya Verdiğimiz Çizim Komutu (Prompt)
     // Sitenin temasına uyması için koyu arka planlı ve neon yeşil detaylı çizmesini istiyoruz.

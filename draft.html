@@ -37,7 +37,11 @@
         .card-spot .pos-label { position: absolute; bottom: 5px; width: 100%; text-align: center; font-size: 0.8rem; font-weight: bold; color: #aaa; }
         
         /* Dolu Kart */
-        .card-spot.filled { border: 2px solid #e1c699; background: url('https://selimdoyranli.com/cdn/fut-card-bg.png') center/cover; }
+        /* Dolu Kart - Dışarıdan resim çekmek yerine CSS ile altın rengi degrade yapıyoruz */
+        .card-spot.filled { 
+            border: 2px solid #fff; 
+            background: linear-gradient(135deg, #d4af37 0%, #aa7700 100%); 
+        }
         .card-spot.filled .plus, .card-spot.filled .pos-label { display: none; }
         .card-img { width: 100%; height: 60%; object-fit: contain; margin-top: 10px; }
         .card-ovr { position: absolute; top: 5px; left: 8px; font-weight: bold; font-size: 1.2rem; color: #fff; }

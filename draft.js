@@ -87,8 +87,8 @@ function startDraft() {
     const teamName = document.getElementById("team-name").value || "Adsız FC";
     const formationKey = document.getElementById("formation").value;
     
-    // AI Logo Üretimi (Girilen isme göre eşsiz bir logo veren DiceBear API)
-    const logoUrl = `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(teamName)}&backgroundColor=1e1e1e&textColor=64ffda`;
+    // AI Logo Üretimi (UI-Avatars API - Daha stabil)
+    const logoUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(teamName)}&background=1e1e1e&color=64ffda&size=128&bold=true`;
     
     document.getElementById("display-team-name").innerText = teamName;
     document.getElementById("team-logo").src = logoUrl;
